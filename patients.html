@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients - Gla Free Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Layout -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hospital Logo">
+            <h3>Gla Free Hospital</h3>
+        </div>
+        <a href="index.html">Dashboard (UI)</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="profile.html">User Profile</a>
+        <a href="login.html">Logout</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="header">
+            <h1>Patient Management</h1>
+            <p>View and register new patients</p>
+        </div>
+
+        <div class="content">
+            <h2>Registered Patients List</h2>
+            <table>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Full Name</th>
+                    <th>Age / Gender</th>
+                    <th>Blood Group</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>P-4501</td>
+                    <td>Alice Johnson</td>
+                    <td>34 / F</td>
+                    <td>O+</td>
+                    <td>555-0101</td>
+                    <td>Admitted</td>
+                    <td><a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View</a></td>
+                </tr>
+                <tr>
+                    <td>P-4502</td>
+                    <td>Robert Smith</td>
+                    <td>52 / M</td>
+                    <td>A-</td>
+                    <td>555-0102</td>
+                    <td>Discharged</td>
+                    <td><a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View</a></td>
+                </tr>
+                <tr>
+                    <td>P-4503</td>
+                    <td>Michael Brown</td>
+                    <td>28 / M</td>
+                    <td>B+</td>
+                    <td>555-0103</td>
+                    <td>OPD</td>
+                    <td><a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View</a></td>
+                </tr>
+            </table>
+
+            <div class="form-section">
+                <h2>Register New Patient</h2>
+                <form action="patients.html">
+                    <label>Full Name:</label><br>
+                    <input type="text" name="pname" required><br>
+                    
+                    <label>Age:</label><br>
+                    <input type="text" name="age" required><br>
+
+                    <label>Gender:</label><br>
+                    <select name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select><br>
+
+                    <label>Blood Group:</label><br>
+                    <input type="text" name="bloodgroup"><br>
+
+                    <input type="submit" value="Register Patient">
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 City Hospital Management System. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
