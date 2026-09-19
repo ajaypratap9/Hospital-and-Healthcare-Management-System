@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors - Gla Free Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Layout -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hospital Logo">
+            <h3>Gla Free Hospital</h3>
+        </div>
+        <a href="index.html">Dashboard (UI)</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="profile.html">User Profile</a>
+        <a href="login.html">Logout</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="header">
+            <h1>Doctor Directory</h1>
+            <p>Manage medical staff and schedules</p>
+        </div>
+
+        <div class="content">
+            <h2>Available Medical Staff</h2>
+            <div style="text-align: center;">
+                <div class="stat-box" style="width: 30%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavp5GclLuNpX4A4UyKoB7UoOHQkcM5gqZO5ytTs1MeL-NGryuuPG3u-Jm&s=10" alt="Dr. Modi Ji" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 2px solid orange;">
+                    <h3>Dr. Modi Ji</h3>
+                    <p style="color: #555555; margin: 0;">Cardiology</p>
+                    <p><strong>Room: 101</strong></p>
+                    <a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View Schedule</a>
+                </div>
+                <div class="stat-box" style="width: 30%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVMaDcqoL7eXnmBI5QnZrMnnxh7ctL5ILRAkw3KqvXQ&s=10" alt="Dr. Rahul Gandhi" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 2px solid orange;">
+                    <h3>Dr. Rahul Gandhi</h3>
+                    <p style="color: #555555; margin: 0;">Neurology</p>
+                    <p><strong>Room: 204</strong></p>
+                    <a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View Schedule</a>
+                </div>
+                <div class="stat-box" style="width: 30%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MIp_yllT92yMt63EVLJwfTtYQWD3WfMNjrk9cqyd8A&s=10" alt="Dr. Kejriwal" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 2px solid orange;">
+                    <h3>Dr. Kejriwal</h3>
+                    <p style="color: #555555; margin: 0;">Pediatrics</p>
+                    <p><strong>Room: 305</strong></p>
+                    <a href="#" class="btn" style="padding: 5px 10px; font-size: 12px;">View Schedule</a>
+                </div>
+            </div>
+
+            <h2>Add New Doctor</h2>
+            <div class="form-section">
+                <form action="doctors.html">
+                    <label>Doctor Name:</label><br>
+                    <input type="text" name="dname" required><br>
+                    
+                    <label>Specialization:</label><br>
+                    <input type="text" name="spec" required><br>
+
+                    <label>Contact Number:</label><br>
+                    <input type="text" name="contact"><br>
+
+                    <input type="submit" value="Add Doctor">
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Gla Free Hospital Management System. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
