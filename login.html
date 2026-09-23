@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Gla Free Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Special override for login to be full screen */
+        .login-wrapper {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body style="background-color: #fafafa;">
+
+    <div class="login-wrapper">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hospital Logo" style="border-radius: 50%; width: 120px; border: 3px solid orange;">
+            <h1 style="color: #222222; margin-bottom: 0;">Gla Free Hospital</h1>
+            <p style="color: #555555; margin-top: 5px;">Secure Staff Login</p>
+        </div>
+
+        <div class="content" style="box-shadow: 0px 4px 10px #cccccc;">
+            <form action="index.html">
+                <label style="color: #222222;"><b>Employee ID / Username:</b></label><br>
+                <input type="text" name="username" placeholder="e.g. EMP1024" required><br>
+                
+                <label style="color: #222222;"><b>Password:</b></label><br>
+                <input type="password" name="password" placeholder="Enter password" required><br>
+                
+                <label style="color: #222222;"><b>Role/Department:</b></label><br>
+                <select name="role">
+                    <option>Administrator</option>
+                    <option>Doctor</option>
+                    <option>Nurse / Staff</option>
+                    <option>Receptionist</option>
+                </select><br>
+
+                <input type="submit" value="Secure Login" style="width: 100%; margin-top: 10px;">
+                
+                <p style="text-align: center; font-size: 13px; margin-top: 15px;">
+                    <a href="#" style="color: orange; font-weight: bold;">Forgot Password?</a> | <a href="#" style="color: orange; font-weight: bold;">Contact IT Support</a>
+                </p>
+            </form>
+        </div>
+        
+        <div class="footer" style="border: none; background: transparent;">
+            <p>&copy; 2026 Gla Free Hospital Management System.</p>
+        </div>
+    </div>
+
+</body>
+</html>
